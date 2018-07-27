@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/swiper.min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style1.css" media="screen">
+    <script src="js/auto.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container whole-world">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide clearfix">
+            <div class="country t-c">
+                <a id="china">
+                    <img src="images/china-img.jpg" alt="">
+                    <p>中国</p>
+                </a>
+            </div>
+            <div class="country t-c">
+                <a id="sinapo">
+                    <img src="images/sinapo-img.jpg" alt="">
+                    <p>新加坡</p>
+                </a>
+            </div>
+            <div class="country t-c">
+                <a href="">
+                    <img src="images/bias-img.jpg" alt="">
+                    <p>埃塞俄比亚</p>
+                </a>
+            </div>
+            <div class="country t-c">
+                <a href="">
+                    <img src="images/tan-img.jpg" alt="">
+                    <p>哈萨克斯坦</p>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="country t-c">
+                <a href="">
+                    <img src="images/sinapo-img.jpg" alt="">
+                    <p>新加坡</p>
+                </a>
+            </div>
+            <div class="country t-c">
+                <a href="">
+                    <img src="images/bias-img.jpg" alt="">
+                    <p>埃塞俄比亚</p>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next jt-right1"></div>
+    <div class="swiper-button-prev jt-left1"></div>
+</div>
+<script src="js/swiper.min.js "></script>
+<script>
+//    var swiper = new Swiper('.swiper-container', {
+//        nextButton: '.swiper-button-next',
+//        prevButton: '.swiper-button-prev',
+//        pagination: '.swiper-pagination',
+//        paginationType: 'fraction'
+//    });
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+</script>
+<div class="world-bus">
+    <div class="world-box">
+        <img src="images/map-x.jpg" alt="">
+    </div>
+    <div class="popup-map xjp-map" >
+        <img src="images/nation-map.png" alt="" class="sinapo-img">
+    </div>
+    <div class="popup-map china-map" >
+        <img src="images/china-map.png" alt="" class="china-img">
+    </div>
+
+
+    <div class="fund-btn-box bg1-white z-in top-line clearfix zhu-bb" >
+        <a href="javascript:void (0)" alt="业务有他"  class="fund-btn1 fund-act  fl" id="ywyt" onclick="ywyt()"></a>
+        <a href="javascript:void (0)" alt="出差点我" class="fund-btn2 fr " id="ccdw" onclick="ccdw()"></a>
+    </div>
+</div>
+<div class="ywyt">
+    <div class="ywyt-box">
+        <div class="swiper-container ywyt-con">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/zhuzhou-img.jpg" alt="">
+                        <div class="t-c city-btn-box">
+                            <a href="" class="city-btn">
+                                 查看&nbsp;株机全景
+                            </a>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/zhuzhou-img.jpg" alt="">
+                    <div class="t-c city-btn-box">
+                        <a href="" class="city-btn">
+                            查看&nbsp;株机全景
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/zhuzhou-img.jpg" alt="">
+                    <div class="t-c city-btn-box">
+                        <a href="" class="city-btn">
+                            查看&nbsp;株机全景
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next you"></div>
+            <div class="swiper-button-prev zuo"></div>
+        </div>
+    </div>
+</div>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+</script>
+<div class="ccdw" style="display: none;">
+    <div class="weather-box clearfix">
+         <div class="weather-img clearfix">
+             <div class="weather-c">
+                 <h2>28℃</h2>
+                 <p>空气湿度：60%</p>
+                 <p>空气质量：良</p>
+             </div>
+             <div class="weather-area">
+                 <div class="fr">
+                     <p><img src="images/dingwei.png" alt="" class="dingwei">新加坡</p>
+                     <p>11月20日&nbsp;周二</p>
+                     <h2>15:48</h2>
+                 </div>
+             </div>
+         </div>
+         <div class="weather-red">
+             <ul class="clearfix">
+                 <li>
+                     <img src="images/sun.png" alt="" class="sun">
+                 </li>
+                 <li>
+                     <h3>周三</h3>
+                     <img src="images/cloudy.png" alt="" class="cloudy">
+                     <p>28℃/22℃</p>
+                 </li>
+                 <li>
+                     <h3>周四</h3>
+                     <img src="images/cloudy.png" alt="" class="cloudy">
+                     <p>28℃/22℃</p>
+                 </li>
+                 <li>
+                     <h3>周四</h3>
+                     <img src="images/rain.png" alt="" class="rain">
+                     <p>28℃/22℃</p>
+                 </li>
+             </ul>
+         </div>
+    </div>
+
+    <div class="world-bus-con p30-10">
+        <div class="step1">
+            <p class="t1-red t-bold tel">基地热线：</p>
+            <p>400-8888-8888</p>
+            <img src="images/step-img1.png" alt="" class="step1-img">
+            <a href=""><span class="tel-btn t1-red"><img src="images/pro-btn3.png" alt="">一键拨号</span></a>
+        </div>
+        <div class="step1">
+            <p class="t1-red t-bold tel">驻新加坡使馆电话：</p>
+            <p>64712117/6495345</p>
+            <p class="t1-red t-bold tel" style="padding-top: 0.2rem">驻新加坡使馆地址：</p>
+            <p>新加坡市东陵路150号</p>
+            <img src="images/step-img2.png" alt="" class="step1-img">
+            <a href=""><span class="tel-btn t1-red"><img src="images/pro-btn3.png" alt="">一键拨号</span></a>
+        </div>
+        <div class="step1">
+            <p class="t1-red t-bold tel">业务状态：</p>
+            <p>正在洽谈中，合同待签</p>
+            <img src="images/step-img3.png" alt="" class="step1-img">
+
+        </div>
+        <div class="step1">
+            <p class="t1-red t-bold tel">温馨提示</p>
+            <p class="hint"><span></span>请提前办好visa卡</p>
+            <p class="hint"><span></span>请提前拨打移动、联通或电信客服热线，开通国际电话卡漫游业务</p>
+            <p class="hint"><span></span>为避免水土不服引起的身体不适，请提前准备以下药品：</p>
+            <p class="hint point">1. 胃舒平（水土不服引起的胃部不适）</p>
+            <p class="hint point">2. 利眠宁（时差引起的失眠）</p>
+            <p class="hint point">3. 黄连素（腹泻专用）</p>
+            <p class="hint point">4. 白+黑（气候不服引起的小感冒）</p>
+            <p class="hint point">5. 乘晕宁/清凉油（晕车晕船）</p>
+            <p class="hint point">6. 健胃消食片（专治积食引起的消化不良）</p>
+
+
+            <img src="images/step-img4.png" alt="" class="step1-img">
+
+        </div>
+    </div>
+</div>
+<!-- Swiper JS -->
+
+<script>
+
+    /* $(".fund-btn-box a").click(function(){
+     $(".fund-btn-box a:not(this)").removeClass("fund-act");
+     $(this).addClass("fund-act");
+     });*/
+      $(function(){
+          $("#china").click(function(){
+              $(".popup-map").css("display","block");
+              $(".sinapo-img").css("display","none");
+              $(".xjp-map").css("display","none");
+          });
+          $("#sinapo").click(function(){
+              $(".popup-map").css("display","block");
+              $(".china-map").css("display","none");
+              $(".sinapo-img").css("display","block");
+          })
+      });
+//    function china(){
+//        $(".china-map").show();
+//        $(".zhuzhou-details").show();
+//        $("#china").addClass("add-act");
+//        $(".xjp-map").hide();
+//        $(".xjp-details").hide();
+//        $("#xjp").removeClass("add-act");
+//    }
+//    function xjp(){
+//        $(".xjp-map").show();
+//        $(".xjp-details").show();
+//        $("#xjp").addClass("add-act");
+//        $(".china-map").hide();
+//        $(".zhuzhou-details").hide();
+//        $("#china").removeClass("add-act");
+//    }
+    function ywyt(){
+        $(".ywyt").show();
+        $("#ywyt").addClass("fund-act");
+        $(".ccdw").hide();
+        $("#ccdw").removeClass("fund-act");
+    }
+    function ccdw(){
+        $(".ccdw").show();
+        $("#ccdw").addClass("fund-act");
+        $(".ywyt").hide();
+        $("#ywyt").removeClass("fund-act");
+    }
+    search=document.getElementById("search");
+    list=document.getElementById("list");
+    popup=document.getElementById("popup");
+    xin=document.getElementById("xin");
+    xinjiapo=document.getElementById("xinjiapo");
+    zhuzhou=document.getElementById("zhuzhou");
+//    search.onclick=function(){
+//        list.style.display="block";
+//        search.style.left=2.7+"rem";
+//    };
+//    xin.onclick=function(){
+//        xinjiapo.style.display="block";
+//        zhuzhou.style.display="none";
+//        popup.style.display="block";
+//
+//    }
+</script>
+<!-- Initialize Swiper -->
+
+</body>
+</html>

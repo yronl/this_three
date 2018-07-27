@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style1.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<header class="head-top clearfix zb-bb">
+    <div class="fund-btn-box bg1-white z-in  clearfix" style="padding: 0.45rem 0.4rem 0;" >
+        <a href="javascript:void (0)" alt="国内"  class="fund-btn1 fund-act  fl master" onclick="guonei()"></a>
+        <a href="javascript:void (0)" alt="海外" class="fund-btn2 fr nurse" onclick="haiwai()"></a>
+    </div>
+</header>
+<div class="subway-lis guonei">
+    <div class="area-bus zb-bb">
+        <a href=""> <img src="images/dc-img4.jpg" alt="">
+            <div class="hot-title">
+                <div class="display2 w70 t-bold">DJJ2型动车组（中华之星）</div>
+            </div>
+        </a>
+    </div>
+    <div class="area-bus zb-bb">
+        <a href=""><img src="images/dc-img5.jpg" alt="" >
+            <div class="hot-title">
+                <div class="display2 w70 t-bold">DJF1型动车组（中原之星）
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="area-bus zb-bb">
+        <a href=""><img src="images/dc-img6.jpg" alt="" >
+            <div class="hot-title">
+                <div class="display2 w70 t-bold">DJJ1型动车组（蓝箭）</div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="subway-lis haiwai" style="display: none;">
+    <div class="area-bus zb-bb">
+        <a href=""> <img src="images/dc-img1.jpg" alt="">
+            <div class="hot-title">
+                <div class="display2 w70 t-bold">马其顿电动车组</div>
+            </div>
+        </a>
+    </div>
+    <div class="area-bus zb-bb">
+        <a href=""><img src="images/dc-img2.jpg" alt="" >
+            <div class="hot-title">
+                <div class="display2 w70 t-bold">出口马来西亚城际动车组（ETS）</div>
+            </div>
+        </a>
+    </div>
+    <div class="area-bus zb-bb">
+        <a href=""><img src="images/dc-img3.jpg" alt="" >
+            <div class="hot-title">
+                <div class="display2 w70 t-bold">出口马来西亚城际动车组（南洋之星）</div>
+            </div>
+        </a>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    function guonei(){
+        $(".guonei").show();
+        $(".master").addClass("fund-act");
+        $(".haiwai").hide();
+        $(".nurse").removeClass("fund-act");
+    }
+    function haiwai(){
+        $(".haiwai").show();
+        $(".nurse").addClass("fund-act");
+        $(".guonei").hide();
+        $(".master").removeClass("fund-act");
+    }
+</script>
+</body>
+</html>

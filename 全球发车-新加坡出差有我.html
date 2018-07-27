@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style1.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<div class="world-bus">
+    <div class="world-box">
+        <img src="images/map.jpg" alt="">
+    </div>
+    <div class="popup-map" id="popup" >
+        <img src="images/nation-map.png" alt="">
+    </div>
+    <div class="fund-btn-box bg1-white z-in">
+        <a href=""><span class="fund-btn t1-red"><img src="images/bus-icon.png" alt="" class="fund-icon1 bus-icon1">业务地点</span></a>
+        <a href=""><span class="fund-btn fr t1-red"><img src="images/bus-icon2.png" alt="" class="fund-icon2 bus-icon2">出差点我</span></a>
+    </div>
+    <a class="area-query t-bold" id="search" style="display: block">驻点速查</a>
+
+    <ul class="address" id="list">
+        <li><img src="images/bus-logo.png" alt=""></li>
+        <li><a href="">中国</a></li>
+        <li><a id="xin">新加坡</a></li>
+        <li><a href="">马来西亚</a></li>
+        <li><a href="">哈塞克斯坦</a></li>
+        <li><a href="">乌兹别克斯坦</a></li>
+        <li><a href="">南非</a></li>
+    </ul>
+
+</div>
+<div class="top-line" style="display:block" id="zhuzhou">
+    <div class="p-30 world-bus-con">
+         <!--<div class="weather clearfix">-->
+              <!--<div class="weather-left ">-->
+                  <!--<p class="time">15:48</p>-->
+                  <!--<p class="day">11月20日 星期二 新加坡市</p>-->
+                  <!--<img src="images/wea-icon.png" alt="">-->
+                  <!--<p class="warm">28℃</p>-->
+                  <!--<p class="air">空气湿度：60%</p>-->
+                  <!--<p class="air">空气质量：良</p>-->
+              <!--</div>-->
+              <!--<div class="weather-right"></div>-->
+
+         <!--</div>-->
+        <div class="weather-img">
+            <img src="images/weather-jpg.jpg" alt="" style="width: 100%">
+        </div>
+         <div class="step1">
+             <p class="t1-red t-bold tel">基地热线：</p>
+             <p>400-8888-8888</p>
+             <img src="images/step-img1.png" alt="" class="step1-img">
+             <a href=""><span class="tel-btn t1-red"><img src="images/pro-btn3.png" alt="">一键拨号</span></a>
+         </div>
+         <div class="step1">
+            <p class="t1-red t-bold tel">酒店热线：</p>
+            <p>400-6666-2222</p>
+             <p class="t1-red t-bold tel" style="padding-top: 0.2rem">酒店地址</p>
+             <p>新加坡市区黑龙江街道1136号</p>
+            <img src="images/step-img2.png" alt="" class="step1-img">
+             <a href=""><span class="tel-btn t1-red"><img src="images/pro-btn3.png" alt="">一键拨号</span></a>
+         </div>
+         <div class="step1">
+            <p class="t1-red t-bold tel">温馨提示</p>
+            <p class="hint"><span></span>请提前办好visa卡</p>
+             <p class="hint"><span></span>请提前拨打移动、联通或电信客服热线，开通国际电话卡漫游业务</p>
+             <p class="hint"><span></span>为避免水土不服引起的身体不适，请提前准备以下药品：</p>
+             <p class="hint point">1. 胃舒平（水土不服引起的胃部不适）</p>
+             <p class="hint point">2. 利眠宁（时差引起的失眠）</p>
+             <p class="hint point">3. 黄连素（腹泻专用）</p>
+             <p class="hint point">4. 白+黑（气候不服引起的小感冒）</p>
+             <p class="hint point">5. 乘晕宁/清凉油（晕车晕船）</p>
+             <p class="hint point">6. 健胃消食片（专治积食引起的消化不良）</p>
+
+
+             <img src="images/step-img2.png" alt="" class="step1-img">
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    search=document.getElementById("search");
+    list=document.getElementById("list");
+    popup=document.getElementById("popup");
+    xin=document.getElementById("xin");
+    xinjiapo=document.getElementById("xinjiapo");
+    zhuzhou=document.getElementById("zhuzhou");
+    search.onclick=function(){
+        list.style.display="block";
+        search.style.left=2.7+"rem";
+    };
+    xin.onclick=function(){
+
+        zhuzhou.style.display="block";
+        popup.style.display="block";
+
+    }
+</script>
+</body>
+</html>

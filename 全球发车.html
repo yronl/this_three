@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style1.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<div class="world-bus">
+    <div class="world-box">
+        <img src="images/map.jpg" alt="">
+    </div>
+    <div class="popup-map xjp-map" >
+        <img src="images/nation-map.png" alt="">
+    </div>
+    <div class="popup-map china-map" >
+        <img src="images/china-map.png" alt="">
+    </div>
+
+    <a class="area-query t-bold" id="search" style="display: block">驻点速查</a>
+
+        <ul class="address" id="list">
+            <li><img src="images/bus-logo.png" alt=""></li>
+            <li><a href="javascript:void (0)" class="" id="china" onclick="china()">中国</a></li>
+            <li><a href="javascript:void (0)" id="xjp" onclick="xjp()">新加坡</a></li>
+            <li><a href="javascript:void (0)">马来西亚</a></li>
+            <li><a href="javascript:void (0)">哈萨克斯坦</a></li>
+            <li><a href="javascript:void (0)">乌兹别克斯坦</a></li>
+            <li><a href="javascript:void (0)">南非</a></li>
+        </ul>
+    <div class="fund-btn-box bg1-white z-in top-line clearfix" >
+        <a href="javascript:void (0)" alt="业务有他"  class="fund-btn1 fund-act  fl" id="ywyt" onclick="ywyt()"></a>
+        <a href="javascript:void (0)" alt="出差点我" class="fund-btn2 fr " id="ccdw" onclick="ccdw()"></a>
+    </div>
+</div>
+<div class="ywyt">
+    <div class=" zhuzhou-details" style="display: block;">
+        <img src="images/zhuzhou-detail.jpg" alt="" style="width: 100%">
+    </div>
+    <div class=" xjp-details" style="display: none;">
+        <img src="images/xjp-detail.jpg" alt="" style="width: 100%">
+    </div>
+</div>
+<div class="ccdw" style="display: none;">
+    <div class=" chuchai-details">
+        <img src="images/chuchaiyouwo.jpg" alt="" style="width: 100%">
+    </div>
+</div>
+
+<!--<div class="top-line" style="display:block" id="zhuzhou">
+    <div class="p-30 world-bus-con">
+        <h3 class="t1-red t-bold fund-lis-title display1">中国 · <span class="t-normal">株洲</span></h3>
+        <div class="fund-new">
+            <img src="images/bus1.jpg" alt="">
+        </div>
+        <p>中车株洲电力机车有限公司坐落于美丽的湘江之滨，毗邻京广、沪昆铁路线，占地2.25平方公里，
+            是中国中车旗下的核心子公司，中国最大的电力机车研制基地、湖南千亿轨道交通产业集群的龙头企业，
+            被誉为“中国电力机车之都”。自1936年创建以来，始终保持快速健康发展，创造了中国轨道交通装备领域的
+            诸多记录。公司主要业务集中在电力机车、城轨车辆、城际动车组领域，同时公司也在大力开拓维保、总包工程、超
+            级电容、车辆高低压电器、制动系统、磁浮车辆、储能式有轨/无轨电车等新产业领域。
+        </p>
+        <p>目前，公司在国内外设有20余家子公司，2015年实现销售收入260亿元、利税41亿元。</p>
+        <div class="fund-new">
+            <img src="images/bus2.jpg" alt="">
+        </div>
+        <p>我们坚持创新驱动发展，持续加大研发投入，推动制造能力升级。在1万余名株机人中，超过25%的员工从事产
+            品及工程技术的研究与开发，其中包含1名在企业成长的中国工程院院士以及10名享受国务院政府特殊津贴的
+            行业专家。我们拥有全球最大的电力机车产能、与欧洲标准接轨的城市交通装备研发制造能力，以及分布在业
+            主城市能快速响应的造修基地。公司建有国内独家
+        </p>
+    </div>
+
+</div>
+<div class="top-line" style="display: none" id="xinjiapo">
+    <div class="p-30 world-bus-con">
+        <h3 class="t1-red t-bold fund-lis-title display1">新加坡· <span class="t-normal">新加坡市</span></h3>
+        <div class="fund-new">
+            <img src="images/bus-city.jpg" alt="">
+        </div>
+        <p>
+            据新加坡《联合早报》1月26日报道，在新加坡上市的离岸支援船舶供
+            应商Vallianz控股配售新股给中国的国有铁路公司，筹集2365万元资金。
+        </p>
+
+        <p>
+            集团昨天上午发布文告说，它与中国中车（CRRC）的两家子公司签订合约，以每股4.3分的价格，
+            配售5亿5000万新股给后者。集团说，该价格比Vallianz4.11分的加权平均价高出4.6％。随着这项
+            宣布，Vallianz股价昨日起0.2分至3.9分。
+        </p>
+        <p>中国中车是中国的国有企业，也是全球最大的轨道交通设备供应商。</p>
+    </div>
+
+</div>-->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+
+    /* $(".fund-btn-box a").click(function(){
+     $(".fund-btn-box a:not(this)").removeClass("fund-act");
+     $(this).addClass("fund-act");
+     });*/
+    function china(){
+        $(".china-map").show();
+        $(".zhuzhou-details").show();
+        $("#china").addClass("add-act");
+        $(".xjp-map").hide();
+        $(".xjp-details").hide();
+        $("#xjp").removeClass("add-act");
+    }
+    function xjp(){
+        $(".xjp-map").show();
+        $(".xjp-details").show();
+        $("#xjp").addClass("add-act");
+        $(".china-map").hide();
+        $(".zhuzhou-details").hide();
+        $("#china").removeClass("add-act");
+    }
+    function ywyt(){
+        $(".ywyt").show();
+        $("#ywyt").addClass("fund-act");
+        $(".ccdw").hide();
+        $("#ccdw").removeClass("fund-act");
+    }
+    function ccdw(){
+        $(".ccdw").show();
+        $("#ccdw").addClass("fund-act");
+        $(".ywyt").hide();
+        $("#ywyt").removeClass("fund-act");
+    }
+    search=document.getElementById("search");
+    list=document.getElementById("list");
+    popup=document.getElementById("popup");
+    xin=document.getElementById("xin");
+    xinjiapo=document.getElementById("xinjiapo");
+    zhuzhou=document.getElementById("zhuzhou");
+    search.onclick=function(){
+        list.style.display="block";
+        search.style.left=2.7+"rem";
+    };
+    xin.onclick=function(){
+        xinjiapo.style.display="block";
+        zhuzhou.style.display="none";
+        popup.style.display="block";
+
+    }
+</script>
+</body>
+</html>

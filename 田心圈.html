@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style1.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body >
+    <div class="txq-nav fund-btn-box bg1-white z-in zb-bb clearfix" style="padding: 0.64rem 0.4rem 0.32rem;" >
+        <a href="" alt="田心全景"  class="fund-btn1   fl " ></a>
+        <a href="javascript:void (0)" alt="田心圈" class="fund-btn2 fund-act fl  "  onclick="txq()"></a>
+        <a href="javascript:void (0)" alt="田心故事" class="fund-btn3 fr " onclick="txgs()"></a>
+    </div>
+    <div class="txq" >
+        <img src="images/txq-1.jpg" alt="" style="width: 100%;">
+        <img src="images/txq-2.jpg" alt="" style="width: 100%;">
+        <img src="images/txq-3.jpg" alt="" style="width: 100%;">
+        <img src="images/txq-4.jpg" alt="" style="width: 100%;">
+        <img src="images/txq-5.jpg" alt="" style="width: 100%;">
+    </div>
+    <div class="txgs" style="display: none;">
+        <img src="images/txls-1.jpg" alt="" style="width: 100%;">
+        <img src="images/txls-2.jpg" alt="" style="width: 100%;">
+        <img src="images/txls-3.jpg" alt="" style="width: 100%;">
+        <img src="images/txls-4.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        function txgs(){
+            $(".txgs").show();
+            $(".fund-btn3").addClass("fund-act");
+            $(".txq").hide();
+            $(".fund-btn2").removeClass("fund-act");
+        }
+        function txq(){
+            $(".txq").show();
+            $(".fund-btn2").addClass("fund-act");
+            $(".txgs").hide();
+            $(".fund-btn3").removeClass("fund-act");
+        }
+    </script>
+</body>
+</html>

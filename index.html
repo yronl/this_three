@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/swiper.min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<div>
+    <div class="swiper-container index-banner" id="banner-swiper-container">
+        <div class="swiper-wrapper" id="banner_image">
+            <div class="swiper-slide">
+                <img src="images/banner1.jpg" alt="" class="swiper-image">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner3.jpg" alt="" class="swiper-image">
+            </div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+    <div class="index-nav">
+        <ul class="clearfix">
+            <li>
+                <a href="产品.html">
+                    <img src="images/index-nav1.png" alt="">
+                    <p>株机故事</p>
+                </a>
+            </li>
+            <li>
+                <a href="株洲公益-列表页.html">
+                    <img src="images/index-nav3.png" alt="">
+                    <p>株机公益</p>
+                </a>
+            </li>
+            <li>
+                <a href="田心圈.html">
+                    <img src="images/index-nav4.png" alt="">
+                    <p>美丽田心</p>
+                </a>
+            </li>
+            <li>
+                <a href="全球发车.html">
+                    <img src="images/index-nav5.png" alt="">
+                    <p>会员登车</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="live top-line">
+        <div class="head-title">
+            <h1 class="h1">直播 <em>Live streaming</em></h1>
+            <a href="直播.html" class="ht-rig" title="查看更多>"></a>
+        </div>
+        <div class="live-con">
+            <div class="live-icon live-on">
+                <!--两种状态-->
+            </div>
+            <a href="直播详情.html">
+                <img src="images/live.png" alt="">
+                <div class="live-con-head display1">出口南非的电力机车运行在南非铁路线上</div>
+            </a>
+        </div>
+
+    </div>
+    <div class="hot-list top-line p-30">
+        <div class="head-title">
+            <h1 class="h1">热榜 <em>Top charts</em></h1>
+            <a href="视频.html" class="ht-rig" title="查看更多>"></a>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <a href="">
+                    <div class="list-box top1">
+                        <div class="news-img">
+                            <img src="images/news1.jpg" alt="">
+                            <div class="play"></div>
+                        </div>
+                        <p class="news-title display1">“一带一路”，产能成果丰硕，株机...</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="list-box">
+                        <div class="news-img">
+                            <img src="images/news2.jpg" alt="">
+                        </div>
+                        <p class="news-title display1">8个城市地铁都用它...</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="list-box">
+                        <div class="news-img">
+                            <img src="images/news3.jpg" alt="">
+                        </div>
+                        <p class="news-title display1">巴基斯坦小伙在中国</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="game-list hot-list top-line p-30">
+        <div class="head-title">
+            <h1 class="h1">游戏 <em>The games</em></h1>
+            <a href="爆款H5.html" class="ht-rig" title="查看更多>"></a>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <a href="">
+                    <div class="list-box ">
+                        <div class="news-img">
+                            <img src="images/game-img1.jpg" alt="">
+                        </div>
+                        <p class="news-title display1">你的手机中毒了吗？</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="list-box">
+                        <div class="news-img">
+                            <img src="images/game-img2.jpg" alt="">
+                        </div>
+                        <p class="news-title display1">我被催眠了，做了一个很长...</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="index-footer ">
+        <div class="index-footer1 ">
+            <div class="clearfix">
+                <a href="">一键导航</a>
+                <a href="">官方网站</a>
+                <a href="">官方微博</a>
+                <a href="">今日头条</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        effect:'fade',
+        autoplay : 3000,//可选选项，自动滑动
+        loop : true//可选选项，开启循环
+
+    });
+</script>
+</body>
+</html>
